@@ -1,38 +1,357 @@
-.App {
+* {
+  box-sizing: border-box;
+  
+}
+
+body{
+  margin:0;
+  font-family:  'Inter', sans-serif;
+  background-color: #23252C;
+  color: white;
+  scroll-behavior: smooth;
+  
+}
+
+nav{
+  display:flex;
+  justify-content: space-between;
+  padding-left: 4%;
+  padding-right: 4%;
+
+
+}
+.nav-ul{
+  display:flex;
+
+}
+.nav-li{
+  list-style:none;
+  margin-left:4.5rem;
+ 
+} 
+
+.a{
+  text-decoration:none;
+  padding: 0.3rem .85rem;
+  transition: 0.8s;
+  font-size: 0.8em;
+  color:#F3BF99;}
+.a:hover{
+    background-color: #F3BF99;
+    color:black;
+    border-radius: 5px;
+  }
+
+.main-div{
+  width:100%;
+  margin:0 auto;
+  background-color: #1A1B21;
+  scroll-snap-align: start;
+  overflow-y: scroll;
+}
+
+.hero-div{
+  padding:5% 4%;
+  background-color:#23252C;
+  display:flex;
+  
+}
+h3{
+  margin:0
+}
+.developer{
+  color:#F3BF99;
+}
+h1{
+  margin-top: .5em;
+  padding-top: 0;
+  padding:0;
+  margin-bottom:0;
+  font-size: 3.5em;
+  line-height: 1em;
+}
+.hero-p{
+  margin-bottom:0.2rem;
+  font-size: 1.5em;
+}
+.hero-name{
+  font-size: 1.5em;
+  color: #5093E2;
+  margin: 0;
+}
+.hero-img{
+  border-radius: 20px;
+  max-width: 30%;
+  margin-left:8em ;
+ 
+}
+.hero-h1-p{
+ padding-top: 1.5rem;
+}
+.hero-description{
+  margin:0;
+  padding:0;
+  font-size: .8em;
+  margin-bottom: 3em;
+}
+.hero-btn{
+  margin-top: 50rem;
+  border: 1px solid #1A1B21;
+  padding:0.4em 1em;
+  font-size: 0.9rem;
+  border-radius: 0.8em;
+  background-color: #F3BF99;
+  transition: 0.8s;
+  text-decoration: none;
+  color: black;
+}
+.hero-btn:hover{
+  border: 1px solid white;
+}
+
+
+.about-div{
+  display:flex;
+  background-color: white;
+  color:black;
+  justify-content: space-evenly;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+.about-card{
+  text-align: center;
+
+}
+.about-a{
+  text-decoration: none;
+  color: white;
+
+}  
+
+
+
+.card{
+  width: 80%;
+  padding-top: 2.7em;
+  padding-bottom:4.5em;
+  
+  border:4px solid #F3BF99;
+  border-radius: 8px;
+}
+.download-btn{
+  
+  border: 1px solid white;
+  padding:0.7em 1.3em;
+  border-radius: 0.6em;
+  background-color: #5093E2;
+  color: white;
+  transition: 0.8s;
+}
+.download-btn:hover{
+  border: 1px solid black;
+}
+
+.about-smiley{
+  font-size: 2em;
+}
+.about-first-flex{
+  align-self: center;
+}
+.about-span, .about-h4{
+  color:#5093E2;
+  font-weight: 700;
+}
+
+
+
+
+.wrapper {
+  max-height: 400px;
+  display:flex;
+  overflow-x: auto;
+
+}
+
+.wrapper::-webkit-scrollbar{
+  width:0
+}
+
+ .wid{
+  min-width: 30%;
+  height: 370px;
+  line-height: 110px;
+  margin-right: 15px;
+ 
+} 
+
+.item{
+  min-width: 100%;
+  height: 100%;
+  line-height: 110px;
+  text-align:center;
+  color:black;
+
+}
+.resume-pad{
+  padding-top: 2%;
+  padding-left: 4%;
+  padding-bottom: 4%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.item3{
+  background-image: url(../src/images/Screenshot\ \(114\).png);
+  background-size: cover;
+  background-position: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.item4{
+  background-image: url(../src/images/Screenshot\ \(110\).png);
+  background-size: cover;
+  background-position: center;
+}
+
+.item1{
+  background-image: url(../src/images/Screenshot\ \(115\).png);
+  background-size: cover;
+}
+
+.item2{
+  background-image: url(../src/images/Screenshot\ \(118\).png);
+  background-size: cover;
+  background-position: center;
+}
+
+.item5{
+  background-image: url(../src/images/Screenshot\ \(112\).png);
+  background-size: cover;
+}
+.firsta{
+  background-color: white;
+  border: 1px solid #F3BF99;
+  border-radius: 10px;
+  padding: 0.25em 1em;
+}
+
+.resume-h2{
+  margin-bottom: 1.5em;
+}
+
+
+
+form{
+  margin: 3em auto;
+  background-color: #23252C;
+  width: 50%;
+  padding: 2em 2em;
+  border-radius: 10px;
+  max-width: 500px;
+}
+
+.contact-div{
+  background-color: white;
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+
+input{
+  width: 99.4%;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  height: 2.5rem;
+  border: 0;
+  padding: 0 1.5rem;
+  margin-top: 0.3rem;
+  
+}
+.contact-btn{
+  width:99.4%;
+  border-radius: 5px;
+  height: 2.5rem;
+  border: 0;
+  padding: 0 1.5rem;
+  font-size: 1rem;
+  color:black;
+  transition: 0.8s;
+}
+.contact-btn:hover{
+  background-color: #F3BF99;
+
+}
+
+textarea{
+  width:99.4%;
+  border-radius: 5px;
+  height: 5rem;
+  border: 0;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 5px;
+  margin-top: 0.3rem;
+  padding-top: 0.65rem;
+}
+label{
+  margin-left: 10px;
+ 
+}
+.bla{
+  text-align: center;
+  color: black;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-top: 0.2px;
+}
+
+.im{
+  opacity:0.3;
+  width: 20px;
+  margin-left: 5px;
+}
+.foot{
+  margin-top: 10px;
+}
+#last{
+  margin-left:2px
+}
+.im:hover{
+  border: 3px solid #F3BF99;
+  opacity: 1;
+}
+
+
+
+
+@media only screen and (max-width: 750px){
+  .nav-ul{
+    display: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media only screen and (max-width: 650px) {
+.nav-ul{
+  display:none
 }
-
-.App-link {
-  color: #61dafb;
+.hero-div{
+  display: block;
+  text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-img{
+  display:none;
+}
+.about-div{
+  display: block;
+  text-align: center;
+}
+.card{
+  margin-left:auto;
+  margin-right: auto;
+}
+.wrapper{
+  display: block;
+}
+.wid{
+  margin-bottom: 2em;
+}
+form{
+  width:70%
+}
 }
